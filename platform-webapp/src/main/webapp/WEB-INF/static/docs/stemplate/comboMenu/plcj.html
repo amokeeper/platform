@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>UI标准化模版</title>
+<link rel="stylesheet" type="text/css" href="../../../css/third-party.min.css">
+<link rel="stylesheet" type="text/css" href="../../../css/sone-ui.min.css">
+<!-- ECharts单文件引入 -->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="p20">
+<div id="page"> 
+<br/>
+  <div >
+    <div class=" panel panel-default">
+      <div class="panel-heading ">
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="lineh30">退货单号：1234567890 &nbsp;&nbsp;&nbsp;退货单状态：待总监审核</div>
+          </div>
+          <div class="col-xs-6">
+            <div class="pull-right">
+              <button id="alertbootBox" type="submit"  class="btn btn-primary ">通过</button>
+              <button id="reject-box" type="submit" class="btn btn-primary ">驳回</button>
+              <button  id="alertbootBox3" type="submit"  class="btn btn-primary">查看日志</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <div class="bk">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="processor" >
+            <ol class="processorBox oh">
+              <li class="current">
+                <div class="step_inner fl"> <span class="icon_step">1</span>
+                  <p>[采销]liubingjun <br/>
+                    <span class="innerspan">2015/02/02 19:22</span></p>
+                </div>
+              </li>
+              <li>
+              <div  class="reject">
+<button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="备注：退货单供应商错误，并且金额较大不宜">驳回</button> </div>
+                <div class="step_inner"> <span class="icon_step">2</span>
+                  <p>[采销]liubingjun <br/>
+                    <span class="innerspan">2015/02/02 19:22</span></p>
+                </div>
+              </li>
+              <li>
+                <div class="step_inner fr"> <span class="icon_step">3</span>
+                  <p>[采销]liubingjun <br/>
+                    <span class="innerspan">2015/02/02 19:22</span></p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <div class="bk ">
+      <div class="row">
+        <div class="col-xs-3">
+          <dl class="dl-horizontal">
+            <dt>退货单号：</dt>
+            <dd>1161</dd>
+            <dt>状态：</dt>
+            <dd>已完成</dd>
+            <dt>创建时间：</dt>
+            <dd>2015-03-19 14:25:02</dd>
+            <dt>退货来源 / 类型：</dt>
+            <dd>厂商直送 / 普通退货</dd>
+            <dt>采销姓名：</dt>
+            <dd>BJCHEJ / bjchej</dd>
+            <dt>SKU / 商品数量：</dt>
+            <dd>1/ 10</dd>
+            <dt>退货金额：</dt>
+            <dd>2,008.50</dd>
+          </dl>
+        </div>
+        <div class="col-xs-3">
+          <dl class="dl-horizontal">
+            <dt>退货单号：</dt>
+            <dd>1161</dd>
+            <dt>状态：</dt>
+            <dd>已完成</dd>
+            <dt>创建时间：</dt>
+            <dd>2015-03-19 14:25:02</dd>
+            <dt>退货来源 / 类型：</dt>
+            <dd>厂商直送 / 普通退货</dd>
+            <dt>采销姓名：</dt>
+            <dd>BJCHEJ / bjchej</dd>
+            <dt>SKU / 商品数量：</dt>
+            <dd>1/ 10</dd>
+            <dt>退货金额：</dt>
+            <dd>2,008.50</dd>
+          </dl>
+        </div>
+        <div class="col-xs-3">
+          <dl class="dl-horizontal">
+            <dt>退货单号：</dt>
+            <dd>1161</dd>
+            <dt>状态：</dt>
+            <dd>已完成</dd>
+            <dt>创建时间：</dt>
+            <dd>2015-03-19 14:25:02</dd>
+            <dt>退货来源 / 类型：</dt>
+            <dd>厂商直送 / 普通退货</dd>
+            <dt>采销姓名：</dt>
+            <dd>BJCHEJ / bjchej</dd>
+            <dt>SKU / 商品数量：</dt>
+            <dd>1/ 10</dd>
+            <dt>退货金额：</dt>
+            <dd>2,008.50</dd>
+          </dl>
+        </div>
+        <div class="col-xs-3">
+          <dl class="dl-horizontal">
+            <dt>退货单号：</dt>
+            <dd>1161</dd>
+            <dt>状态：</dt>
+            <dd>已完成</dd>
+            <dt>创建时间：</dt>
+            <dd>2015-03-19 14:25:02</dd>
+            <dt>退货来源 / 类型：</dt>
+            <dd>厂商直送 / 普通退货</dd>
+            <dt>采销姓名：</dt>
+            <dd>BJCHEJ / bjchej</dd>
+            <dt>SKU / 商品数量：</dt>
+            <dd>1/ 10</dd>
+            <dt>退货金额：</dt>
+            <dd>2,008.50</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br/>
+  <table class="table  table-bordered">
+    <thead>
+      <tr>
+        <th>Rendering</th>
+        <th>Browser</th>
+        <th>Platform(s)</th>
+        <th>Engine </th>
+        <th>CSS grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="3">跨列</td>
+        <td>312.8</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>Misc</td>
+        <td>NetFront</td>
+        <td>Embedded </td>
+        <td>-</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>Misc</td>
+        <td>Dillo 0.8</td>
+        <td>Embedded </td>
+        <td>-</td>
+        <td rowspan="2">跨行</td>
+      </tr>
+      <tr>
+        <td>Misc</td>
+        <td>Links</td>
+        <td>Text only</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<script type="text/javascript" src="../../../js/third-party/vendors.min.js"></script>
+<script type="text/javascript">
+
+
+</script>
+</body>
+</html>

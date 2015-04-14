@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>UI标准化模版</title>
+<link rel="stylesheet" type="text/css" href="../../../css/third-party.min.css">
+<link rel="stylesheet" type="text/css" href="../../../css/sone-ui.min.css">
+<!-- ECharts单文件引入 -->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="p20">
+<div>
+
+  <h4>bootbox自定义dialog、confirm、alert样式(推荐)</h4>
+  <p>官网: <a href="http://bootboxjs.com/" target="_blank">http://bootboxjs.com/</a></p>
+  <p>基本设置：<a href="http://blog.csdn.net/zh921112/article/details/41513161" target="_blank" >http://blog.csdn.net/zh921112/article/details/41513161</a></p>
+  <div class="bs-example">
+    <p>实例：</p>
+    
+    <div  style="height:100px;">
+      <button id="alertbootBox" type="button" class="btn btn-primary " >alert按钮</button>
+      <button id="confirmbootBox" type="button" class="btn btn-primary " >confirm按钮</button>
+      <button id="dialogbootBox" type="button" class="btn btn-primary " >dialog按钮</button>
+    </div>
+  </div>
+  <div class="highlight">
+    <pre>
+    $("#alertMessageBox").click(function(){	
+	bootbox.alert({  
+            buttons: {  
+               ok: {  
+                    label: '我是ok按钮',  
+                    className: 'btn-myStyle'  
+                }  
+            },  
+            message: '提示信息',  
+            callback: function() {  
+                alert('关闭了alert');  
+            },  
+            title: "添加标题",  
+        }); 
+	});
+    
+            </pre>
+  </div>
+</div>
+
+<br/>
+<h4>jQuery UI dialog窗口</h4>
+<p>jQuery UI dialog官网地址：<a href="http://jqueryui.com/dialog/" target="_blank">http://jqueryui.com/dialog/</a></p>
+<div class="bs-example">
+  <p>实例：</p>
+  <div id="dialog" title="Basic dialog">
+    <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+  </div>
+  <button id="opener"  class="btn btn-primary">Open Dialog</button>
+</div>
+<div class="highlight">
+  <pre>
+ 1.js文件
+ jquery-ui.js
+ 2.函数调用：
+            $( "#dialog" ).dialog({
+      			autoOpen: false,
+     
+   			 });
+ 
+            $( "#opener" ).click(function() {
+              $( "#dialog" ).dialog( "open" );
+            });
+  </pre>
+</div>
+
+<div > <button id="promptMessageBox" type="button" class="btn btn-primary "  >确认框</button></div>
+<br/>
+<br/>
+<script type="text/javascript" src="../../../js/third-party/vendors.min.js"></script> 
+<script type="text/javascript" src="../../../js/sone-ui/sone-ui.min.js"></script> 
+<script type="text/javascript" src="../../../js/sone-widget/sone-widget.min.js"></script> 
+<script type="text/javascript">
+$(function() {
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+     
+    });
+ 
+    $( "#opener" ).click(function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+  });
+  
+$(function () {
+
+	// 四个选项都是可选参数
+	$("#alertbootBox").click(function(){
+	
+	bootbox.alert({  
+	
+            buttons: {  
+               ok: {  
+                    label: '我是ok按钮',  
+                    className: 'btn-primary'  
+                }  
+            },  
+            message: '提示信息',  
+            callback: function() {  
+                alert('关闭了alert');  
+            },  
+            title: "bootbox alert",  
+			
+        }); 
+		
+	  
+		
+	});
+
+$("#confirmbootBox").click(function(){
+	bootbox.confirm({  
+        buttons: {  
+            confirm: {  
+                label: '我是确认按钮',  
+                className: 'btn-myStyle'  
+            },  
+            cancel: {  
+                label: '我是取消按钮',  
+                className: 'btn-default'  
+            }  
+        },  
+        message: '提示信息',  
+        callback: function(result) {  
+            if(result) {  
+                alert('点击确认按钮了');  
+            } else {  
+                alert('点击取消按钮了');  
+            }  
+        },  
+        title: "bootbox confirm",  
+        }); 
+		}); 
+		$("#dialogbootBox").click(function(){
+			 bootbox.dialog({  
+                message: "I am a custom confirm",  
+                title: "Confirm title",  
+                buttons: {  
+                    Cancel: {  
+                        label: "Cancel",  
+                        className: "btn-default",  
+                        callback: function () {  
+                            alert("Cancel");  
+                        }  
+                    }  
+                    , OK: {  
+                        label: "OK",  
+                        className: "btn-primary",  
+                        callback: function () {  
+                            alert("OK");  
+                        }  
+                    }  
+                }  
+            });  
+			
+			});
+		
+	// 如需增加回调函数，后面直接加 .on( function(e){} );
+	// 点击“确定” e: true
+	// 点击“取消” e: false
+	$("#promptMessageBox").click(function(){
+		$.confirm("提示","是否删除角色？",function (e) {alert("返回结果：" + e)});
+		  
+	});
+	
+});
+
+ 
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>UI标准化模版</title>
+
+<!--<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">-->
+ <link rel="stylesheet" type="text/css"
+	href="css/third-party.min.css"> 
+<!--第三方css，包括bootstrap、highcharts、echarts等-->
+<!--<link rel="stylesheet" type="text/css" href="css/third-party.min.css">-->
+<!--ui标准化组件样式-->
+<link rel="stylesheet" type="text/css" href="css/sone-ui.min.css">
+<!-- ECharts单文件引入 -->
+<script src="http://echarts.baidu.com/build/dist/echarts-all.js"></script>
+<!-- HighCharts单文件引入 -->
+<script src="http://cdn.hcharts.cn/highcharts/4.0.3/highcharts-all.js"></script>
+
+<!-- third party--> 
+<script type="text/javascript" src="js/third-party/vendors.min.js"></script> 
+<!--ui标准化组件core  包括leftMenu、Header-->
+<script type="text/javascript" src="js/sone-ui/sone-ui.min.js"></script> 
+<!--ui标准化 通用插件 包括daterangepicker、combo等插件-->
+<script type="text/javascript" src="js/sone-widget/sone-widget.min.js"></script> 
+<!--ui标准化组件 example等-->
+<script type="text/javascript" src="../js/third-party/iframeResizer.js"></script> 
+
+
+<script type="text/javascript" src="../js/sone-example/common-init.js"></script> 
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="js/third-party/html5patch/html5shiv.js"></script>
+      <script src="js/third-party/html5patch/respond.js"></script>
+<![endif]-->
+
+</head>
+<body style="min-width:1340px;">
+<div id="wrapper"> 
+    
+    <!-- center iframe-->
+    <div id="page-wrapper"> 
+
+        <iframe  frameborder=no  width="100%" scrolling="no"  src ="docs/stemplate/home.html"    id="ifm" name="ifm">
+		</iframe>
+
+    </div>
+</div>
+</body>
+</html>

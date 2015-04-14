@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>UI标准化模版</title>
+<link rel="stylesheet" type="text/css" href="../../../css/third-party.min.css">
+<link rel="stylesheet" type="text/css" href="../../../css/sone-ui.min.css">
+<!-- ECharts单文件引入 -->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+.cx {
+	border: 1px solid #bfbfbf;
+	background: white;
+	padding-left: 10px;
+	height: 32px;
+	width: 130px;
+	margin: 5px 0px;
+}
+</style>
+</head>
+<body class="p20">
+<br/>
+
+<div  id="page" > 
+<br/>
+  <h3>案例一</h3>
+  <div class="panel panel-default">
+    <div  class="panel-heading " >
+      <div class=" row">
+        <div class="col-xs-11">
+          <div class=" conthide">
+            <div class="row">
+              <div class="col-xs-2">
+                <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                  <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据" readonly>
+                  <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                </div>
+              </div>
+              <div class="col-xs-2">
+                <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                  <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据" readonly>
+                  <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                </div>
+              </div>
+              <div class="col-xs-2">
+                <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                  <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据" readonly>
+                  <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                </div>
+              </div>
+              <div class="col-xs-2">
+                <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                  <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据" readonly>
+                  <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                </div>
+              </div>
+              <div class="col-xs-2">
+                <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                  <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据" readonly>
+                  <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                </div>
+              </div>
+              <div class="col-xs-2">
+                <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                  <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据" readonly>
+                  <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" contshow" style="margin-top:-5px;">
+            <div class="row">
+              <div class="col-xs-12">
+                <fieldset>
+                  <legend>通用</legend>
+                  <div class="row">
+                    <div class="col-xs-2">
+                      <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                        <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                        <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                      </div>
+                    </div>
+                    <div class="col-xs-2">
+                      <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                        <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                        <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                      </div>
+                    </div>
+                    <div class="col-xs-2">
+                      <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                        <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                        <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                      </div>
+                    </div>
+                    <div class="col-xs-2">
+                      <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                        <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                        <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                      </div>
+                    </div>
+                    <div class="col-xs-2">
+                      <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                        <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                        <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                      </div>
+                    </div>
+                    <div class="col-xs-2">
+                      <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                        <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                        <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="col-xs-2">
+                <fieldset>
+                  <legend>组织</legend>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                </fieldset>
+              </div>
+              <div class="col-xs-2">
+                <fieldset>
+                  <legend>组织</legend>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                </fieldset>
+              </div>
+              <div class="col-xs-2">
+                <fieldset>
+                  <legend>组织</legend>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                </fieldset>
+              </div>
+              <div class="col-xs-2">
+                <fieldset>
+                  <legend>组织</legend>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                  <div class="cx" > <span style="line-height:30px;vertical-align: top;">地区:</span>
+                    <input id="district_cn" type="text" 
+									style="background:white;cursor: pointer; width:80px; height: 30px;padding-bottom:2px;box-shadow:none;border:none;overflow:hidden;"
+									name="district_cn" value="全部数据1" readonly>
+                    <input
+									name="citycategory" id="citycategory" style="display: none"
+									value="" />
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-1 "  style=" padding-top:6px;">
+          <button id="searchButton" type="button"class="btn btn-primary btn-sm">查询</button>
+          <div id="showMore" style="margin:5px 1px; float:right;"> <a href="#"> <span  class="fa fa-chevron-down"> </span> </a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br/>
+  <h3>案例二</h3>
+  <div >
+    <div class="drop panel panel-default">
+      <div class="panel-heading bordered-blue">
+        <div class="kj">快捷查询</div>
+        <input id="tags"  class="form-control"  type="text" placeholder="添加标签"  />
+      </div>
+      <div class="drop-body">
+        <div class="row">
+          <div class="col-xs-11">
+            <div class="selector">
+              <div class="col-xs-12">
+                <dl class="dl-horizontal">
+                  <dt>供应商：</dt>
+                  <dd>
+                    <input  class="form-control" id="input3" placeholder="请输入供应商名称...">
+                  </dd>
+                </dl>
+              </div>
+              <div class="col-xs-6">
+                <dl class="dl-horizontal">
+                  <dt>商品编号：</dt>
+                  <dd>
+                    <input  class="form-control" id="input3" placeholder="最多输入50个...">
+                  </dd>
+                </dl>
+              </div>
+              <div class="col-xs-3">
+                <dl class="dl-horizontal">
+                  <dt>品牌：</dt>
+                  <dd>
+                    <input  class="form-control" id="input3" placeholder="请输入供应商名称...">
+                  </dd>
+                </dl>
+              </div>
+              <div class="col-xs-3">
+                <dl class="dl-horizontal">
+                  <dt>供应商：</dt>
+                  <dd>
+                    <input  class="form-control" id="input3" placeholder="请输入供应商名称...">
+                  </dd>
+                </dl>
+              </div>
+              <div class="col-xs-12">
+                <dl class="dl-horizontal">
+                  <dt>供应商：</dt>
+                  <dd>
+                    <input  class="form-control" id="input3" placeholder="请输入供应商名称...">
+                  </dd>
+                </dl>
+              </div>
+              <div class="col-xs-6">
+                <dl class="dl-horizontal">
+                  <dt>商品编号：</dt>
+                  <dd>
+                    <input  class="form-control" id="input3" placeholder="最多输入50个...">
+                  </dd>
+                </dl>
+              </div>
+              <div class="col-xs-3">
+                <dl class="dl-horizontal">
+                  <dt>品牌：</dt>
+                  <dd>
+                    <input  class="form-control" id="input3" placeholder="请输入供应商名称...">
+                  </dd>
+                </dl>
+              </div>
+              <div class="col-xs-3">
+                <dl class="dl-horizontal">
+                  <dt>供应商：</dt>
+                  <dd>
+                    <input  class="form-control" id="input3" placeholder="请输入供应商名称...">
+                  </dd>
+                </dl>
+              </div>
+              <div class="col-xs-12">
+                <dl class="dl-horizontal">
+                  <dt>供应商：</dt>
+                  <dd>
+                    <input  class="form-control" id="input3" placeholder="请输入供应商名称...">
+                  </dd>
+                </dl>
+              </div>
+              <div class="col-xs-12">
+                <dl class="dl-horizontal">
+                  <dt>供应商：</dt>
+                  <dd>
+                    <input  class="form-control" id="input3" placeholder="请输入供应商名称...">
+                  </dd>
+                </dl>
+              </div>
+              <div class="col-xs-12">
+                <dl class="dl-horizontal">
+                  <dt>供应商：</dt>
+                  <dd>
+                    <input  class="form-control" id="input3" placeholder="请输入供应商名称...">
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-1">
+            <div  >
+              <button id="" class="btn btn-primary " type="button" style=" width:100px; margin-top:50%;">查询</button>
+              
+              <button id="showadd" class="btn btn-primary " type="button" style=" width:100px;margin-top:10px;">保存快捷查询</button>
+              
+              <p style=" text-align:right; margin-top:10px;" ><a href="#">重置</a></p>
+            </div>
+          </div>
+        </div>
+        <div id="showwrap" class="s-more"> <a href="#"> <span class="hide-wrap sm-wrap">更多选项<i></i> </span> </a> </div>
+      </div>
+    </div>
+    <br/>
+  </div>
+  <br/>
+  
+</div>
+<script type="text/javascript" src="../../../js/third-party/vendors.min.js"></script> 
+<script type="text/javascript" src="../comboMenu/js/jquery.masterblaster.js"></script> 
+<script type="text/javascript" src="js/dropjs.js"></script>
+<script type="text/javascript">
+
+
+</script>
+</body>
+</html>

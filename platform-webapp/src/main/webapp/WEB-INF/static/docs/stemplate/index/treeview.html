@@ -1,0 +1,131 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+<meta name="description" content="">
+<meta name="author" content="">
+<title>UI标准化模版</title>
+<link rel="stylesheet" type="text/css" href="../../../css/third-party.min.css">
+<link rel="stylesheet" type="text/css" href="../../../css/sone-ui.min.css">
+<!-- ECharts单文件引入 -->
+ 
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="p20">
+<div class="">
+    <h3>Bootstrap Tree View</h3>
+    <hr/>
+    <br/>
+    <div class="row">
+        <div class="col-sm-4">
+            <h4>默认</h4>
+            <div id="treeview1" class="test"></div>
+        </div>
+        <div class="col-sm-4">
+            <h4>不展开</h4>
+            <div id="treeview2" class="test"></div>
+        </div>
+        <div class="col-sm-4">
+            <h4>全展开</h4>
+            <div id="treeview3" class="test"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <h4>主题</h4>
+            <div id="treeview4" class="test"></div>
+        </div>
+        <div class="col-sm-4">
+            <h4>Icons</h4>
+            <div id="treeview5" class="test"></div>
+        </div>
+        <div class="col-sm-4">
+            <h4>Tags</h4>
+            <div id="treeview6" class="test"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <h4>无边框(默认UI)</h4>
+            <div id="treeview7" class="test"></div>
+        </div>
+        <div class="col-sm-4">
+            <h4>背景色</h4>
+            <div id="treeview8" class="test"></div>
+        </div>
+        <div class="col-sm-4">
+            <h4>Node Overrides</h4>
+            <div id="treeview9" class="test"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <h4>链接 a</h4>
+            <div id="treeview10" class="test"></div>
+        </div>
+        <div class="col-sm-4">
+            <h4>事件</h4>
+            <div id="treeview11" class="test"></div>
+        </div>
+        <div class="col-sm-4">
+            <h4>输出</h4>
+            <div id="event_output"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <h4>JSON数据</h4>
+            <div id="treeview12" class="test"></div>
+        </div>
+        <div class="col-sm-4">
+            <h4></h4>
+            <div id="treeview13" class="test"></div>
+        </div>
+        <div class="col-sm-4">
+            <h4></h4>
+            <div id="treeview14"></div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <div class="highlight">
+        <pre>
+1.加载插件、Bootstrap、jQuery;
+bootstrap-treeview.js
+2.HTML内容
+&lt;div id="treeview1"&gt;&lt;/div&gt;
+3.函数调用---详情见treeview.js
+//可以设置图标，字体颜色，背景颜色；
+ $('#treeview1').treeview({
+  		  expandIcon: "fa fa-plus-square",//设置展开图标
+          collapseIcon: "fa fa-minus-square",//设置收起图标
+          nodeIcon: "glyphicon glyphicon-user",//设置默认字段图标（可修改）
+          color: "#fff",
+          backColor: "#1ABC9C",//设置背景颜色
+          onhoverColor: "#16A085",//设置鼠标移上的背景颜色
+          borderColor: "#34495E",//设置边框颜色
+          showBorder: false,//设置边框
+          showTags: true,
+          highlightSelected: true, 
+          selectedColor: "#fff",
+          selectedBackColor: "#16A085",
+          data: defaultData
+        });
+
+</pre>
+    </div>
+    <br/>
+</div>
+<script type="text/javascript" src="../../../js/third-party/vendors.min.js"></script> 
+<script type="text/javascript" src="../../../js/sone-widget/sone-widget.min.js"></script> 
+<script type="text/javascript" src="js/treeview.js"></script>
+</body>
+</html>

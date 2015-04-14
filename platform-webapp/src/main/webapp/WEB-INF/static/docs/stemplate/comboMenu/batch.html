@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>UI标准化模版</title>
+<link rel="stylesheet" type="text/css" href="../../../css/third-party.min.css">
+<link rel="stylesheet" type="text/css" href="../../../css/sone-ui.min.css">
+<!-- ECharts单文件引入 -->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="p20">
+<div > <br/>
+  <div >
+    <div class=" panel panel-default">
+      <div class="panel-heading  bordered-blue">
+        <h4 class="panel-title">批量创建报废单</h4>
+      </div>
+      <div class="panel-body">
+        <dl class="dl-horizontal">
+          <dt>是否是图书:</dt>
+          <dd>
+            <div class="row">
+              <div class="col-xs-4">
+                <select class="form-control">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+          </dd>
+          <dt>报废类型:</dt>
+          <dd>
+            <div class="row">
+              <div class="col-xs-4">
+                <select class="form-control">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+          </dd>
+          <dt>上传文件:</dt>
+          <dd>
+            <div class="row">
+              <div class="col-xs-4">
+                <input type="file" id="exampleInputFile">
+              </div>
+            </div>
+          </dd>
+          <dt>报废原因:</dt>
+          <dd>
+            <div class="row">
+              <div class="col-xs-4">
+                <textarea  class="form-control" id="vercode" check-type="required" rows="3"></textarea>
+              </div>
+            </div>
+          </dd>
+          <dt> </dt>
+          <dd>
+            <button class="btn btn-primary" value="1" name="scope" type="button"  style="width:120px;">提交</button>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <br/>
+  <div class=" panel panel-default">
+    <div class="panel-heading  bordered-blue">
+      <h4 class="panel-title"> 处理结果 </h4>
+    </div>
+    <div class="panel-body">
+      <table class="table  table-bordered">
+        <thead>
+          <tr>
+            <th>Rendering</th>
+            <th>Browser</th>
+            <th>Platform(s)</th>
+            <th>Engine </th>
+            <th>CSS grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="3">跨列</td>
+            <td>312.8</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Misc</td>
+            <td>NetFront</td>
+            <td>Embedded </td>
+            <td>-</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Misc</td>
+            <td>Dillo 0.8</td>
+            <td>Embedded </td>
+            <td>-</td>
+            <td rowspan="2">跨行</td>
+          </tr>
+          <tr>
+            <td>Misc</td>
+            <td>Links</td>
+            <td>Text only</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="../../../js/third-party/vendors.min.js"></script> 
+<script type="text/javascript">
+
+
+</script>
+</body>
+</html>

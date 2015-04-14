@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>UI标准化模版</title>
+<link rel="stylesheet" type="text/css" href="../../../css/third-party.min.css">
+<link rel="stylesheet" type="text/css" href="../../../css/sone-ui.min.css">
+<!-- ECharts单文件引入 -->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+<body class="p20">
+<br/>
+<h4>jQuery UI MultiSelect(推荐)</h4>
+<br/>
+<div class="bs-example">
+                <p>实例：</p>
+	<select id ="sela" title="Basic example" multiple="multiple" name="example-basic" size="5">
+	<option value="V1">Option 1</option>
+	<option value="V2">Option 2</option>
+	<option value="V3">Option 3</option>
+	<option value="option4">Option 4</option>
+	<option value="option5">Option 5</option>
+	<option value="option6">Option 6</option>
+	<option value="option7">Option 7</option>
+	<option value="option8">Option 8</option>
+	<option value="option9">Option 9</option>
+	<option value="option10">Option 10</option>
+	<option value="option11">Option 11</option>
+	<option value="option12">Option 12</option>
+	</select>
+    </div>
+  <div class="highlight">
+                <pre>
+ 1.js文件
+js/jquery.multiselect.js
+ 2.html文件
+ &lt;select id ="sela" title="Basic example" multiple="multiple" name="example-basic" size="5"&gt;
+	&lt;option value="V1"&gt;Option 1&lt;/option&gt;
+	&lt;option value="V2"&gt;Option 2&lt;/option&gt;
+	&lt;option value="V3"&gt;Option 3&lt;/option&gt;
+	&lt;option value="option4"&gt;Option 4&lt;/option&gt;
+	&lt;option value="option5"&gt;Option 5&lt;/option&gt;
+	&lt;option value="option6"&gt;Option 6&lt;/option&gt;
+	&lt;option value="option7"&gt;Option 7&lt;/option&gt;
+	&lt;option value="option8"&gt;Option 8&lt;/option&gt;
+	&lt;option value="option9"&gt;Option 9&lt;/option&gt;
+	&lt;option value="option10"&gt;Option 10&lt;/option&gt;
+	&lt;option value="option11"&gt;Option 11&lt;/option&gt;
+	&lt;option value="option12"&gt;Option 12&lt;/option&gt;
+	&lt;/select&gt;
+3.函数调用---详情见comboMenu.js
+</pre>
+
+</div>   
+  <h4>comboMenu</h4>
+            <p>注：详情了解见帮助文档comboMenu</p>
+            <div class="bs-example">
+                <p>实例：</p>
+                <div class="form-group">
+                    <label style="margin-left:0px;" class="checkbox-inline">
+                    <div  class="clearfix">
+                        <div style="position:relative;" id="cmbDiv"></div>
+                    </div>
+                    </label>
+                </div>
+            </div>
+            <div class="highlight">
+                <pre>
+ 1.js文件
+ src/widget/jquery.combomenu.js
+ 2.html文件
+ &lt;div class="form-group"&gt;
+        &lt;label style="margin-left:0px;" class="checkbox-inline"&gt;
+                &lt;div  class="clearfix"&gt;
+                    &lt;div style="position:relative;" id="cmbDiv"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+        &lt;/label&gt;
+&lt;/div&gt;
+3.函数调用---详情见comboMenu.js
+</pre>
+            </div>
+<script type="text/javascript" src="../../../js/third-party/vendors.min.js"></script> 
+<script type="text/javascript" src="../../../js/sone-widget/sone-widget.min.js"></script> 
+<script type="text/javascript" src="js/jquery.multiselect.js"></script>
+<script type="text/javascript" src="js/comboMenu.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("select").multiselect({
+        noneSelectedText: "==请选择==",
+        checkAllText: "全选",
+        uncheckAllText: '全不选',
+        selectedList:3
+    });
+});
+
+</script>
+</body>
+</html>

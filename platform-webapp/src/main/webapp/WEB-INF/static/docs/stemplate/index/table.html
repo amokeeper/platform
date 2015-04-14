@@ -1,0 +1,201 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+<meta name="description" content="">
+<meta name="author" content="">
+<title>UI标准化模版</title>
+<link rel="stylesheet" type="text/css" href="../../../css/third-party.min.css">
+<link rel="stylesheet" type="text/css" href="../../../css/sone-ui.min.css">
+<!-- ECharts单文件引入 -->
+ 
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="p20">
+<div class="row">
+    <div class="col-xs-12 rightcontent"> <br/>
+        <h4>Datatables(默认UI)</h4>
+        <p> Datatables 插件使用 Bootstrap 框架的基本示例。基本功能：分页、排序、过滤。</p>
+        <p>Datatables中文网:<a href="http://dt.thxopen.com/" target="_blank">http://dt.thxopen.com/</a></p>
+        <p> jQuery的DataTables插件的使用方法:<a href="http://www.guoxk.com/node/jquery-datatables" target="_blank"> http://www.guoxk.com/node/jquery-datatables</a></p>
+        <div class="panel panel-default" >
+            <div class="panel-heading" >
+                <h4 class="panel-title">DataTables </h4>
+            </div>
+            <div class="panel-body ">
+                <table id="example1" class="table table-bordered table-condensed table-striped table-hover" >
+     
+                    <thead>
+                        <tr>
+                            <th>Rendering </th>
+                            <th>Browser</th>
+                            <th>Platform(s)</th>
+                            <th>Engine version</th>
+                            <th>CSS grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="5">Loading data from server</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Rendering</th>
+                            <th>Browser</th>
+                            <th>Platform(s)</th>
+                            <th>Engine version</th>
+                            <th>CSS grade</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        <div class="highlight">
+            <pre>
+ 1.js文件
+jquery.dataTables.js
+
+ 2.函数调用---详情见table.js
+$(document).ready(function() {
+$('#example1').dataTable( {
+	"bAutoWidth": true, //自动宽度
+	"aLengthMenu": [[10, 25, 50,100, -1], [10, 25, 50,100, "All"]], //定义每页显示数据数量
+	"bProcessing": true,
+	"sAjaxSource": 'data/arrays.txt', //用ajax
+	"oLanguage": {  //改变语言
+		"sLengthMenu": "每页显示 _MENU_ 条记录",
+		"sZeroRecords": "抱歉， 没有找到",
+		"sInfo": "从 _START_ 到 _END_ /共 _TOTAL_ 条数据",
+		"sInfoEmpty": "没有数据",
+		"sInfoFiltered": "(从 _MAX_ 条数据中检索)",
+		"oPaginate": {
+		"sFirst": "首页",
+		"sPrevious": "前一页",
+		"sNext": "后一页",
+		"sLast": "尾页"
+	},
+	"sZeroRecords": "没有检索到数据",
+	}
+} );
+} );
+</pre>
+        </div>
+        <div class="panel-group" id="accordion">
+            <h4>w2ui</h4>
+            <p>w2ui 是一个jQuery UI 库，包括了许多控件用于创建类似于桌面应用和数据驱动的Web程序。
+                它包含了以下控件：layout, sidebar, toolbar, grid, popup, tabs, forms 和 field controls。这些控件采用HTML5-CSS3技术实现，并拥有强大的API来控制它们的各个方面。</p>
+            <p>w2ui官网：<a href="http://w2ui.com/web/home" target="_blank">http://w2ui.com/web/home</a></p>
+            <div id="grid" style="height: 400px;"></div>
+            <div class="highlight">
+                <pre>
+ 1.js文件
+ src/bower_components/w2ui/dist/w2ui.min.js
+ 2.css文件
+ src/bower_components/w2ui/dist/w2ui.min.css
+ 3.html代码
+ &lt;div id="grid" style="height: 400px;"&gt;&lt;/div&gt;
+ 4.函数调用---详情见table.js
+ $(function() {
+    $('#grid').w2grid({
+        name : 'grid',
+        header : '列表名称',
+        show : {  //基础属性配置
+            toolbar : true,
+            footer : true,
+            header : true,
+            lineNumbers: true,
+            selectColumn: true,
+            expandColumn: true
+        },
+        searches : [ {//搜索字段
+            field : 'lname',
+            caption : '名字',
+            type : 'text'
+        }, {
+            field : 'fname',
+            caption : '姓氏',
+            type : 'text'
+        }, {
+            field : 'email',
+            caption : '邮箱',
+            type : 'text'
+        } ],
+        sortData : [ {
+            field : 'recid',
+            direction : 'ASC'
+        } ],
+        columns : [ {//表格表头的控制
+            field : 'recid',
+            caption : 'ID',
+            size : '50px',
+            sortable : true,
+            attr : 'align=center'
+        }, {
+            field : 'lname',
+            caption : '姓氏',
+            size : '30%',
+            sortable : true,
+            resizable : true
+        }, {
+            field : 'fname',
+            caption : '名字',
+            size : '30%',
+            sortable : true,
+            resizable : true
+        }, {
+            field : 'email',
+            caption : '邮件',
+            size : '40%',
+            sortable : true,
+            resizable : true
+        }, {
+            field : 'sdate',
+            caption : '起始时间',
+            size : '120px',
+            sortable : true,
+            resizable : true
+        } ],
+        records : [ {//字段数据
+            recid : 1,
+            fname : 'John',
+            lname : 'doe',
+            email : 'jdoe@gmail.com',
+            sdate : '4/3/2012'
+        },
+        .
+        .
+        .  
+        
+         {
+            recid : 2,
+            fname : 'Stuart',
+            lname : 'Motzart',
+            email : 'jdoe@gmail.com',
+            sdate : '4/3/2012'
+        }, 
+        onExpand: function (event) {//隐藏的内容
+            $('#'+event.box_id).html('<div style="padding: 10px">Expanded content</div>').animate({ 'height': 100 }, 100);
+        }
+    });
+});
+
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../../../js/third-party/vendors.min.js"></script> 
+<script type="text/javascript" src="../../../js/sone-widget/sone-widget.min.js"></script> 
+<script type="text/javascript" src="js/table.js"></script>
+
+</body>
+</html>
